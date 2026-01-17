@@ -92,6 +92,27 @@ function mystery1(arr) {
 }
 ```
 
+*// My solution to Case 1://*
+```js
+
+
+function myStery1(arr) {
+  
+  for (let i = 0; i < arr.length; i++) {  //Loop through elements in the array//
+    if (arr[i] % 2 === 0) { //We check if the element is even//
+      return true; //If an even number is found, return true//
+    }
+  }
+  return false;   //If NO even numbers are found, return false//
+}
+
+//ChatGPT: The function is supposed to check if there is any even number in the array, but it is broken because i never increases, causing an infinite loop when the first element is odd.
+
+
+
+
+
+
 ### :brain: Your Mission:
 1. **Ask AI** what the code does and why it's broken.
 2. **Fix** the logic. Test it with sample arrays.
@@ -108,6 +129,38 @@ function mystery1(arr) {
 function q(q){return q.split('').reverse().join('')==q}
 ```
 
+```js
+//My solution to Case 2://
+/*Your Mission:
+Decode what this function is really doing.
+Rename the function and variables for clarity.
+Add comments and reformat it to be readable.
+✅ Tip: Ask the AI:
+
+“Explain this function step-by-step and suggest better variable names.”*/
+
+
+function isPalindrome(text) {  
+  //Palindrome is a word, phrase etc....that reads the same backward and forward. 
+  // What we are looking is if a string is palindrome.
+
+  let reversedText = text.split('').reverse() .join(''); 
+  //We turn the string into an array of characthers using *split.//
+  //We use the *reverse method, to revers the order of the elements in an array//
+  //Join method returns an array as a string//
+
+
+  return reversedText === text;//Here we check if the reversed string is Palindrome. And returns true or false.//
+}
+
+isPalindrome("anna"); //true
+isPalindrome("hello"); //false
+
+//ChatGPT: Using q as both function name and parameter name is confusing.Use === instead of ==.
+
+//The most I leared is to know whar is a palindrome and how to check for it in JS. Also the importance of clear naming for code readability.
+
+
 ### :brain: Your Mission:
 1. Decode what this function is really doing.
 2. Rename the function and variables for clarity.
@@ -120,6 +173,7 @@ function q(q){return q.split('').reverse().join('')==q}
 
 ## :card_index_dividers: Case 3: The Over-Engineered Mess
 
+
 ```js
 function complicatedCalc(a, b) {
   let x = a;
@@ -131,6 +185,25 @@ function complicatedCalc(a, b) {
   return x;
 }
 ```
+
+```js
+
+//My solution to Case 3://
+
+function easyCalc(a, b) {
+  
+  return a + b; 
+}
+
+
+//ChatGPT: The function is over-engineered for adding two numbers. It can be simplified to a single return statement that adds a and b directly.//
+//Here I learned about simplifying code and avoiding unnecessary loops for basic operations. As we talked before.//
+//We don't need y, and the loop just simplifys to adding a and b.//
+
+//NOTE: I really enjoined this LAB. It heped me to to understand much better the concepts, and how to use AI as a tool to help me, also to learn from it.//
+
+
+
 
 ### :brain: Your Mission:
 1. Figure out what this function really does.
